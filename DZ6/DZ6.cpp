@@ -20,25 +20,31 @@ int main() {
 	cout << "Выберите уровень сложности:  1 - Легко,  2 - Тяжело  " << endl;
 	cin >> levelUser;
 	int i = 0;
-	while (i == 0) {
+	while (i == 0) 
+	{
 		int j = 0;
 		int k = 6;
 
-		switch (levelUser) {
+		switch (levelUser) 
+		{
 
 		case 1:
-			while (j == 0) {
+			while (j == 0) 
+			{
 				cout << "Текущий уровень сложности - Легко! Эх, кишка у тебя тонка, видать! " << endl << endl;
 				cout << "Попробуйте угадать число! А если не угадаешь - тебя выебут специально обученные урки! Введи цифру от 0 до 100 включительно: " << endl << endl;
 				cin >> userInput;
 
-				if (userInput < currentNumber) {
+				if (userInput < currentNumber) 
+				{
 					cout << "Ержан проснись, ты обосрался! Твое число меньше! Попробуй угадать еще раз! Лагерный кольщик уже подумывает, чтобы наколоть тебе на сраке кочегара! Введи цифру от 0 до 100 включительно, век воли не видать, пока в тебя что нибудь не ввели: " << endl << endl;
 				}
-				else if (userInput > currentNumber) {
+				else if (userInput > currentNumber) 
+				{
 					cout << "Опять 25! Неправильно! Твое число больше! Ну не убивайся ты так - ты ведь так не убьешься!! Пробуй угадать еще разок! Ведь опущенный, по поганялу Мойдодыр, уже идет в твою сторону, лучезарно улыбаясь и напевая - Милости прошу, к нашему шалашу!!! Введи цифру от 0 до 100 включительно, а то хуже будет: " << endl << endl;
 				}
-				else {
+				else 
+				{
 					cout << "Воот это повороот!!! Правильно!!! Это число : " << currentNumber << "! Вдруг, как в сказке скрипнула дверь! Помылся и даже мыло не уронил! Вот это личное достижение!!! " << endl << endl;
 					j = 1;
 				}
@@ -47,13 +53,16 @@ int main() {
 			break;
 
 		case 2:
-			while ((k <= 6) && (k > 0)) {
+			while ((k <= 6) && (k > 0)) 
+			{
 				cout << "Текущий уровень сложности - Тяжело! (А с другой стороны, кому сейчас легко?). Попыток до петуширования турбовичевыми зэками осталось: " << k << " ! " << endl << endl;
 				cin >> userInput;
 
-				if (userInput < currentNumber) {
+				if (userInput < currentNumber) 
+				{
 
-					switch (k) {
+					switch (k) 
+					{
 					
 					case 1:
 					{
@@ -93,9 +102,11 @@ int main() {
 					}
 					}
 				}
-				else if (userInput > currentNumber) {
+				else if (userInput > currentNumber) 
+				{
 
-					switch (k) {
+					switch (k) 
+					{
 
 					case 1:
 					{
@@ -140,7 +151,7 @@ int main() {
 					k = -1;
 				}
 
-				}
+			}
 				i = 1;
 				break;
 
@@ -150,6 +161,6 @@ int main() {
 			cin >> levelUser;
 			break;
 			}
-		}
-		return 0;
 	}
+		return 0;
+}
